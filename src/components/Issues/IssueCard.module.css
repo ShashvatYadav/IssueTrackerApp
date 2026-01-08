@@ -1,0 +1,154 @@
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: rgba(102, 126, 234, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+}
+
+.title {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #111827;
+    flex: 1;
+    line-height: 1.4;
+}
+
+.badges {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.low {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.medium {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.high {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.description {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+.metaItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.metaLabel {
+    color: #9ca3af;
+    font-weight: 500;
+}
+
+.metaValue {
+    color: #374151;
+    font-weight: 600;
+}
+
+.statusControl {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid #f3f4f6;
+}
+
+.statusLabel {
+    font-weight: 600;
+    color: #374151;
+    font-size: 0.9rem;
+}
+
+.statusSelect {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    outline: none;
+}
+
+.statusSelect:hover {
+    border-color: #667eea;
+}
+
+.statusSelect.open {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.statusSelect.inprogress {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.statusSelect.done {
+    background: #d1fae5;
+    color: #065f46;
+}
+
+.errorMessage {
+    margin: 0;
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+    .header {
+        flex-direction: column;
+    }
+}
